@@ -17,7 +17,7 @@ The second tab is to login for returning users. When submit is clicked it looks 
 
 The downside to this is that when a new "account" is created the cookie is overwritten and the old credentials are wiped. But for the purposes of this application I think that it serves well.
 
-The GeoMap is included. However, as I learned so late in the game, google requires you to pay to truly use the map. So it may work once or twice before the API says nope pay me to play more. I was successfully able to implement the active working map and connect it with my web app. You will see all of that code under the commedted section labled Google Map and API in the main.js file.(85% was copied from the google api documentation the other 15% I had to figure out how to change it slightly) 
+The GeoMap is included. However, as I learned so late in the game, google requires you to pay to truly use the map. So it may work once or twice before the API says nope pay me to play more. I was successfully able to implement the active working map and connect it with my web app. You will see all of that code under the commedted section labled Google Map and API in the main.js file.(All of the google map code was adapted from the Google API documentation.) 
 
 ## The Honest Truth
 I'll be honest in saying that I am not a front-end wizzard. So with the CSS I had Katie looking over my shoulder helping me to get that all nice and tidy. 
