@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
+$pale-green: #68BD2A;
+$l-green: #5B8F23;
+$green: #5B8F23;
+$red: #9D3C1B;
+$orchard: #FF892F;
+$black: #1E261B;
+$grey: #C0C0C0;
+
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
+%font {
+  color: #9d3c3c;
+  font-family: "Abril Fatface", cursive;
+}
+
+p {
+  @extend %font;
+  font-size: 21px;
+}
+
+#logo {
+  @extend %font;
+  font-size: xx-large;
+}
+
+.intro {
+  align-self: center;
+}
+
+.tab_content {
+  border: 5px solid $orchard;
+  border-radius: 0em 0em 0em 1em;
+  animation: fadeEffect 1s;
+}
+
+#sign_in {
+  display: none;
+}
+
+.nav-tabs {
+  background-color: $l-green;
+  border-radius: 0em 1em 0em 0em;
+}
+
+.nav-item {
+  cursor: pointer;
+  &:hover {
+    background-color: #ffa52f;
+    transition: 0.5s;
+  }
+  &.active {
+    background-color: $orchard;
+  }
+}
+
+#login_link {
+  color: lightgray;
+  &:hover{
+    color: white;
+    font-weight: 700;
+  }
+}
+
+figure {
+  width: 50%;
+  text-align: center;
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+}
+
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content {
+  .title {
+    font-weight: bold;
+  }
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: Roboto;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+  label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+  }
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+  &:focus {
+    border-color: #4d90fe;
+  }
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+#target {
+  width: 345px;
+}
+
+.copyRite {
+  color: white;
+  text-align: center;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

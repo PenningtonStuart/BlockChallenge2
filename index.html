@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="login" type="html" href="login.html">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChsUsstI37tDJab6Wm-q7jzhTdgcExTrM&callback=initMap">
+    </script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChsUsstI37tDJab6Wm-q7jzhTdgcExTrM&libraries=places&callback=initAutocomplete"
+        async defer></script>
+
+    <title>Rent n' Grill</title>
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" id="logo" href="index.html">Rent n' Grill</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Report a Bug</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Edit Private Pins</a>
+                </li>
+            </ul>
+            <ul class="my-2 my-lg-0">
+                <a id="login_link" href="login.html"> Login </a>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="container mt-2">
+        <section class="row">
+
+            <p class="col-md-9 col-sm-12 intro">Rent n' Grill is your portal to delicious grilled food, outdoor fun, adventure, and more!
+                <br>
+                Simply type your area into the search bar and select a grill near you to open the door to your grilling
+                adventure!</p>
+            <figure class="col-md-3 col-sm-12">
+                <img src="/assets/bbq.jpg" alt="Grill Logo">
+            </figure>
+        </section>
+
+        <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+        <div id="map"></div>
+    </div>
+
+</body>
+
+<footer class="navbar-dark bg-dark copyRite p-2 mt-5">
+    <small>
+        &copy; Rent n' Grill Copyright 2019
+        <br> Stuart Pennington <br>
+    </small>
+</footer>
+
+</html>
